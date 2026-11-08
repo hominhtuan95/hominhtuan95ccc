@@ -1,0 +1,16 @@
+AUTOSKILL HOMINHTUAN95 - 5 SKILL MINI
+
+Thong so cai san khi mo Auto:
+Tab: 5000 ms (bat)
+Space: 300 ms (bat)
+Skill 1: 1000 ms (bat)
+Skill 2: 2000 ms (bat)
+Skill 3: 3000 ms (bat)
+Skill 4: 4000 ms (bat)
+Skill 5: 6000 ms (bat)
+
+Giao dien 240x240 px; F8 bat/tat. Chon HWND cua game va bam Chay.
+
+GitHub: tai Autoskill_Hominhtuan95.py len thu muc goc; dat build.yml trong .github/workflows/build.yml; Actions > Run workflow; tai EXE o Artifacts.
+
+Luu y: game co the khong nhan phim PostMessage khi thu nho hoac chay nen.
