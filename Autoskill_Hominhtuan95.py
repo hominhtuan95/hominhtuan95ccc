@@ -94,13 +94,18 @@ class App:
         if idx < 0 or idx >= len(self.hwnds):
             messagebox.showwarning('Chưa chọn game', 'Mở game và nhấn nút làm mới ↻.')
             return
+        
         try:
             delays = [int(x.get()) / 1000 for x in self.ms]
-            if any(not 0.05 <= x <= 60 for x in delays):
+            if any(not 0.05 <= x <= 180 for x in delays):
                 raise ValueError
         except ValueError:
-            messagebox.showerror('Sai thời gian', 'Nhập thời gian 50-180000 ms.')
+            messagebox.showerror(
+                'Sai thời gian',
+                'Nhập thời gian 50-180000 ms.'
+            )
             return
+
         self.hwnd = self.hwnds[idx][0]
         enabled = [v.get() for v in self.vars]
         self.running = True
