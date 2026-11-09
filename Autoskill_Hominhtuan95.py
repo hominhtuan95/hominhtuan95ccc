@@ -55,7 +55,7 @@ class App:
         self.hwnds = []
         self.hwnd = None
         self.vars = [tk.BooleanVar(value=True) for _ in range(7)]
-        self.ms = [tk.StringVar(value=x) for x in ('5000', '300', '1000', '2000', '3000', '4000', '6000')]
+        self.ms = [tk.StringVar(value=x) for x in ('5000', '300', '1000', '2000', '3000', '4000', '180000')]
         self.status = tk.StringVar(value='Dừng | F8 bật/tắt')
         ttk.Label(root, text='Autoskill Hominhtuan95', font=('Segoe UI', 10, 'bold')).pack(pady=(3, 0))
         top = ttk.Frame(root)
